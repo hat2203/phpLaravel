@@ -23,7 +23,7 @@ Route::get('/admin/product/create', [App\Http\Controllers\Admin\ProductControlle
 Route::post('/admin/product/create', [App\Http\Controllers\Admin\ProductController::class,"store"]);
 Route::get('/admin/product/edit/{product}', [App\Http\Controllers\Admin\ProductController::class,"editForm"]);
 Route::post('/admin/product/edit/{product}', [App\Http\Controllers\Admin\ProductController::class,"update"]);
-Route::post('/admin/product/delete/{product}', [App\Http\Controllers\Admin\ProductController::class,"delete"]);
+Route::post("/admin/product/delete/{product}",[App\Http\Controllers\Admin\ProductController::class,"delete"]);
 
 //category
 Route::get('/admin/category', [App\Http\Controllers\Admin\CategoryController::class, "caList"]);

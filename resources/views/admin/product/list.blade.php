@@ -47,6 +47,10 @@
                             </td>
                             <td>
                                 <a href="{{url("/admin/product/edit",["product"=>$item->id])}}" class="bnt btn-outline-primary">Edit</a>
+                                <form action="{{url("/admin/product/delete",["product"=>$item->id])}}" method="post">
+                                    @csrf
+                                    <button type="submit" onclick="return confirm('Chắc chắn xóa?');" class="btn btn-outline-danger">Delete</button>
+                                </form>
                             </td>
                         </tr>
                     @endforeach
