@@ -46,7 +46,7 @@
                                 @endif
                             </td>
                             <td>
-                                <a href="{{url("/admin/product/edit/{product}",["product"=>$item->id])}}" class="bnt btn-outline-primary">Edit</a>
+                                <a href="{{url("/admin/product/edit",["product"=>$item->id])}}" class="bnt btn-outline-primary">Edit</a>
                             </td>
                         </tr>
                     @endforeach

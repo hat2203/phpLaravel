@@ -64,7 +64,7 @@ class ProductController extends Controller
     public function editForm(Product $product){
        // $product = Product::findOrFail($id);
         $categories = Category::all();
-        return view("admin.product.edit",compact("categories"));
+        return view("admin.product.edit",compact("categories","product"));
     }
 
     public function update(Product $product, Request $request)
