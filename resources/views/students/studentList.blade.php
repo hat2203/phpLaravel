@@ -9,6 +9,7 @@
     @include("admin.html.css")
     @yield("custom_css")
 </head>
+
 <body>
 
     <div class="card">
@@ -57,6 +58,7 @@
             {!! $data->appends(app("request")->input())->links("pagination::bootstrap-4") !!}
         </div>
     </div>
+
     @include('admin.html.js')
     @yield("custom_js")
 {{--@endsection--}}

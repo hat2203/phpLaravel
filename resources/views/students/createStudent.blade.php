@@ -9,6 +9,7 @@
     @include("admin.html.css")
     @yield("custom_css")
 </head>
+
 <body>
 
 <div class="card card-primary">
@@ -44,6 +45,7 @@
         </div>
     </form>
 </div>
+
 @include('admin.html.js')
 @yield("custom_js")
 {{--@endsection--}}
