@@ -44,7 +44,7 @@
                      "label"=>"Product thumbnail",
                      "key"=>"thumbnail",
                      "type"=>"file",
-                     "required"=>true
+                     "required"=>false
                  ])
                 <div class="form-group">
                     <label>Product Description</label>
@@ -64,6 +64,9 @@
                             <option @if($product->category_id== $item->id) selected @endif value="{{$item->id}}">{{$item->name}}</option>
                         @endforeach
                     </select>
+                    @error("category_id")
+                    <p class="text-danger">{{$message}}</p>
+                    @enderror
                 </div>
             </div>
             <!-- /.card-body -->

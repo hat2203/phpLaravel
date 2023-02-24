@@ -62,6 +62,9 @@
                             <option @if(old("category_id")==$item->id) selected @endif value="{{$item->id}}">{{$item->name}}</option>
                         @endforeach
                     </select>
+                    @error("category_id")
+                    <p class="text-danger">{{$message}}</p>
+                    @enderror
                 </div>
             </div>
             <!-- /.card-body -->

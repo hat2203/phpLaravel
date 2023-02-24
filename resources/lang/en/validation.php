@@ -164,4 +164,11 @@ return [
         "qty"=>"số lượng"
     ],
 
+//    "doituong"=>[
+//        "name"=>"tên",
+//        "age"=>"tuổi",
+//        "address"=>"địa chỉ",
+//        "telephone"=>"số điện thoại"
+//    ]
+
 ];

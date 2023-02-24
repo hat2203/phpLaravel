@@ -17,8 +17,13 @@ class CreateTableOrders extends Migration
             $table->id();
             $table->dateTime("order_date");
             $table->unsignedDecimal("grand_total",12,4);
+            $table->string("fist_name");
+            $table->string("last_name");
+            $table->string("country");
             $table->text("shipping_address");
+            $table->string("post_code");
             $table->string("customer_tel",20);
+            $table->string("customer_email");
             $table->unsignedTinyInteger("status")->default(0);
             $table->timestamps();
         });
